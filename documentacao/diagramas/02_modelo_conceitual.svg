@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="400" viewBox="0 0 1300 400">
+<defs><pattern id="grade" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="0.5" cy="0.5" r="0.7" fill="#cfcfcf"/></pattern><marker id="seta" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#666" stroke-width="1.5"/></marker></defs>
+<rect width="1300" height="400" fill="#fff"/><rect width="1300" height="400" fill="url(#grade)"/>
+<rect x="230" y="110" width="150" height="170" fill="#fff" stroke="#666666" stroke-width="2"/>
+<text x="305.0" y="199.0" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">Posicao</text>
+<line x1="230" y1="150" x2="90" y2="100" stroke="#666666" stroke-width="1.6" />
+<circle cx="90" cy="100" r="7" fill="#666666" stroke="#666666" stroke-width="1.5"/>
+<text x="90" y="88" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">id_posicao</text>
+<line x1="230" y1="240" x2="90" y2="290" stroke="#666666" stroke-width="1.6" />
+<circle cx="90" cy="290" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="90" y="314" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">nome_posicao</text>
+<line x1="380" y1="195" x2="560" y2="195" stroke="#666666" stroke-width="1.6" />
+<line x1="720" y1="195" x2="900" y2="195" stroke="#666666" stroke-width="1.6" />
+<polygon points="640,145.0 720.0,195 640,245.0 560.0,195" fill="#fff" stroke="#666666" stroke-width="2"/>
+<text x="640" y="199" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">possui</text>
+<text x="420" y="186" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">(0,N)</text>
+<text x="860" y="186" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">(1,1)</text>
+<rect x="900" y="110" width="150" height="170" fill="#fff" stroke="#666666" stroke-width="2"/>
+<text x="975.0" y="199.0" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">Jogador</text>
+<line x1="1050" y1="135" x2="1190" y2="80" stroke="#666666" stroke-width="1.6" />
+<circle cx="1190" cy="80" r="7" fill="#666666" stroke="#666666" stroke-width="1.5"/>
+<text x="1190" y="68" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">id_jogador</text>
+<line x1="1050" y1="195" x2="1190" y2="195" stroke="#666666" stroke-width="1.6" />
+<circle cx="1190" cy="195" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="1190" y="183" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">nome</text>
+<line x1="1050" y1="255" x2="1190" y2="310" stroke="#666666" stroke-width="1.6" />
+<circle cx="1190" cy="310" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="1190" y="334" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">numero_camisa</text>
+</svg>
