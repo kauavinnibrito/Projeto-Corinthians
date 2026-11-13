@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="500" viewBox="0 0 1150 500">
+<defs><pattern id="grade" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="0.5" cy="0.5" r="0.7" fill="#cfcfcf"/></pattern><marker id="seta" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#666" stroke-width="1.5"/></marker></defs>
+<rect width="1150" height="500" fill="#fff"/><rect width="1150" height="500" fill="url(#grade)"/>
+<rect x="60" y="70" width="380" height="174" fill="#fff" stroke="#666666" stroke-width="2"/>
+<text x="250.0" y="93" font-size="14" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">posicoes</text>
+<line x1="60" y1="106" x2="440" y2="106" stroke="#666666" stroke-width="1.6" />
+<circle cx="80" cy="122" r="7" fill="#666666" stroke="#666666" stroke-width="1.5"/>
+<text x="98" y="126" font-size="13" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">id_posicao</text>
+<text x="428" y="126" font-size="12" text-anchor="end" fill="#000" font-family="Arial, Helvetica, sans-serif">INT AUTO_INCREMENT  PK</text>
+<circle cx="80" cy="150" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="98" y="154" font-size="13" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">nome_posicao</text>
+<text x="428" y="154" font-size="12" text-anchor="end" fill="#000" font-family="Arial, Helvetica, sans-serif">VARCHAR(40) NOT NULL</text>
+<line x1="60" y1="168" x2="440" y2="168" stroke="#666666" stroke-width="1.6" />
+<text x="72" y="190" font-size="12" text-anchor="start" fill="#000" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Restrições</text>
+<text x="72" y="210" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">PRIMARY KEY (id_posicao)</text>
+<text x="72" y="230" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">UNIQUE uq_posicoes_nome (nome_posicao)</text>
+<rect x="680" y="70" width="440" height="310" fill="#fff" stroke="#666666" stroke-width="2"/>
+<text x="900.0" y="93" font-size="14" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">jogadores</text>
+<line x1="680" y1="106" x2="1120" y2="106" stroke="#666666" stroke-width="1.6" />
+<circle cx="700" cy="122" r="7" fill="#666666" stroke="#666666" stroke-width="1.5"/>
+<text x="718" y="126" font-size="13" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">id_jogador</text>
+<text x="1108" y="126" font-size="12" text-anchor="end" fill="#000" font-family="Arial, Helvetica, sans-serif">INT AUTO_INCREMENT  PK</text>
+<circle cx="700" cy="150" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="718" y="154" font-size="13" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">nome</text>
+<text x="1108" y="154" font-size="12" text-anchor="end" fill="#000" font-family="Arial, Helvetica, sans-serif">VARCHAR(100) NOT NULL</text>
+<circle cx="700" cy="178" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="718" y="182" font-size="13" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">numero_camisa</text>
+<text x="1108" y="182" font-size="12" text-anchor="end" fill="#000" font-family="Arial, Helvetica, sans-serif">INT NOT NULL</text>
+<circle cx="700" cy="206" r="7" fill="#fff" stroke="#666666" stroke-width="1.5"/>
+<text x="718" y="210" font-size="13" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">id_posicao</text>
+<text x="1108" y="210" font-size="12" text-anchor="end" fill="#000" font-family="Arial, Helvetica, sans-serif">INT NOT NULL  FK</text>
+<line x1="680" y1="224" x2="1120" y2="224" stroke="#666666" stroke-width="1.6" />
+<text x="692" y="246" font-size="12" text-anchor="start" fill="#000" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Restrições</text>
+<text x="692" y="266" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">PRIMARY KEY (id_jogador)</text>
+<text x="692" y="286" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">UNIQUE uq_jogadores_numero (numero_camisa)</text>
+<text x="692" y="306" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">CHECK ck_jogadores_numero (numero_camisa BETWEEN 1 AND 99)</text>
+<text x="692" y="326" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">FOREIGN KEY fk_jogadores_posicoes (id_posicao)</text>
+<text x="692" y="346" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">REFERENCES posicoes (id_posicao)</text>
+<text x="692" y="366" font-size="12" text-anchor="start" fill="#000" font-family="Arial, Helvetica, sans-serif">ON UPDATE CASCADE  ON DELETE RESTRICT</text>
+<line x1="440" y1="122" x2="560" y2="122" stroke="#666666" stroke-width="1.6" />
+<line x1="560" y1="122" x2="560" y2="206" stroke="#666666" stroke-width="1.6" />
+<line x1="560" y1="206" x2="680" y2="206" stroke="#666666" stroke-width="1.6" />
+<text x="458" y="114" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">1</text>
+<text x="662" y="198" font-size="13" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif">N</text>
+</svg>
