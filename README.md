@@ -21,13 +21,14 @@ Projeto integrado de DWS, POO e Banco de Dados. É um sistema para gerenciar o e
 ## Organização das pastas
 
 ```
-Corinthians_FC/
+Projeto-Corinthians/
 ├── app/
 │   ├── models/          classes Jogador e Posicao
 │   ├── dao/             consultas ao banco (JogadorDAO e PosicaoDAO)
-│   ├── static/css/      style.css
-│   ├── static/js/       script.js (Fetch)
-│   ├── templates/       index.html
+│   ├── static/css/      style.css (usado pelo Flask e pela versão do GitHub Pages)
+│   ├── static/js/       script.js (Fetch, versão com Flask)
+│   │                    pages.js (localStorage, versão do GitHub Pages)
+│   ├── templates/       index.html (página servida pelo Flask)
 │   ├── database.py      conexão com o MySQL
 │   ├── routes.py        rotas da API
 │   └── __init__.py      cria o app Flask
@@ -40,8 +41,10 @@ Corinthians_FC/
 │   └── roteiro_apresentacao.md
 ├── testes/
 │   └── testar_api.py
+├── index.html           versão estática para o GitHub Pages (precisa ficar na raiz)
 ├── requirements.txt
-└── run.py
+├── run.py
+└── .gitignore
 ```
 
 ## Como criar o banco
